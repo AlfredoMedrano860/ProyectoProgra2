@@ -37,7 +37,7 @@ public class Student implements Identifiable{
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Student {" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", curriculum=" + curriculum +
