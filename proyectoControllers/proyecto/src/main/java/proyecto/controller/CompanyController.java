@@ -10,8 +10,10 @@ import java.util.ArrayList;
 @RequestMapping("/company")
 public class CompanyController {
 
+}
+/*
     @Autowired
-    //CompanyService service;
+    CompanyService service;
 
     private ArrayList<Company> companies;
 
@@ -21,31 +23,33 @@ public class CompanyController {
 
     @GetMapping
     public ArrayList<Company> getAll() {
-        return new ArrayList<>(); // service.getAll();
+        return service.getAll();
     }
 
     @PostMapping
     public Company postCompany(@RequestBody Company company) {
-        return null; //service.add(company);
+        return service.add(company);
     }
 
     @GetMapping("/{id}")
-    public Company getCompanyById(@PathVariable int id) {
-        return null; // service.search(id);
+    public Company getCompanyById(@PathVariable Integer id) {
+        return service.post(id);
     }
 
     @PutMapping
     public Company putCompany(@RequestBody Company company) {
-        return null; // service.update(company);
+        return service.put(company);
     }
 
     @DeleteMapping("/{id}")
-    public Company deleteCompany(@PathVariable int id) {
-        return null; //service.delete(id);
+    public Company deleteCompany(@PathVariable Integer id) {
+        return service.delete(id);
     }
 
     @PatchMapping
     public Company patchCompany(@RequestBody Company company) {
-        return null; // service.edit(company);
+        return service.patch(company);
     }
 }
+
+ */
