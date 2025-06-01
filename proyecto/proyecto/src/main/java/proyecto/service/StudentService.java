@@ -1,10 +1,12 @@
 package proyecto.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import proyecto.model.Student;
+import proyecto.repository.StudentRepository;
 
 import java.util.ArrayList;
-
+@Service
 public class StudentService {
     @Autowired
     StudentRepository repository;
@@ -17,16 +19,16 @@ public class StudentService {
         return repository.add(student);
     }
 
-    public Student remove(Integer id){
-        return repository.remove(id);
+    public Student delete(Integer id){
+        return repository.delete(id);
     }
 
     public Student search(Integer id){
         return repository.search(id);
     }
 
-    public Student edit(Student student){
-        return repository.edit(student);
+    public Student patch(Student student){
+        return repository.patch(student);
     }
 
     public Student update(Student student){ return repository.update(student); }

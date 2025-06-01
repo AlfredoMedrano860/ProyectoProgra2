@@ -29,7 +29,7 @@ public abstract class CRUDMemory<T extends Identifiable>implements ICRUD<T,Integ
         return null;
     }
 
-    public abstract T edit(T element);
+    public abstract T patch(T element);
 
     @Override
     public T delete(Integer id) {
